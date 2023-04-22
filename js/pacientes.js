@@ -1,3 +1,11 @@
+var tablaPaciente = localStorage.getItem("tablaPacienteStorage");
+tablaPaciente = JSON.parse(tablaPaciente);
+if (tablaPaciente == null) {
+    var tablaPaciente = [];
+}
+
+listar();
+
 function listar() {
     console.log("INGRESANDO LISTADO...");
 
