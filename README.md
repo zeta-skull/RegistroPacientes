@@ -2,7 +2,7 @@
 
 # Proyecto registro de pacientes
 
-Primera página de **bootcamp UDD**, la cual tiene fines educativos, también puede servir para un proyecto real de registro de pacientes, utilizando librerías **Bootstrap**, **CSS**, **Javascript** y **SweetAlert** para el despliegue de confirmaciones.
+Seguda página de **bootcamp UDD**, la cual tiene fines educativos, también puede servir para un proyecto real de registro de pacientes, utilizando librerías **Bootstrap**, **CSS**, **Javascript** y **SweetAlert** para el despliegue de confirmaciones.
 
 # Descripción básica y Mockup
 
