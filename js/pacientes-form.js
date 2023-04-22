@@ -1,3 +1,17 @@
+var tablaPaciente = localStorage.getItem("tablaPacienteStorage");
+tablaPaciente = JSON.parse(tablaPaciente);
+if (tablaPaciente == null) {
+    var tablaPaciente = [];
+}
+
+
+
+var idForm = localStorage.getItem("idForm");
+idForm = JSON.parse(idForm);
+if (idForm == null) {
+    var idForm = 0;
+}
+
 cargarPagina();
 
 function guardar() {
