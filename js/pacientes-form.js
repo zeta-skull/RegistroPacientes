@@ -55,7 +55,7 @@ function guardar() {
                 localStorage.setItem("tablaPacienteStorage", JSON.stringify(tablaPaciente));
                 Swal.fire('CAMBIOS GUARDADOS', '', 'success').then(
                     (result) => {
-                        window.location.replace("pacientes.html");
+                        window.location.replace("index.html");
                     }
                 );
 
