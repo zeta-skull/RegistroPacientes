@@ -68,3 +68,22 @@ function guardar() {
 
 
 }
+
+//*SACAR DATOS DE LA FILA DE LA TABLA Y PONERLO EN EL FORMULARIO*//
+function cargarPagina() {
+    if (idForm > 0) {
+        for (const i in tablaPaciente) {
+            var varPaciente = JSON.parse(tablaPaciente[i]);
+            if (varPaciente.idPaciente == idForm) {
+                document.getElementById("txtIdPaciente").value = varPaciente.idPaciente;
+                document.getElementById("txtNombApellido").value = varPaciente.nombApellido;
+                document.getElementById("txtRut").value = varPaciente.rut;
+                document.getElementById("txtTelefono").value = varPaciente.telefono;
+                document.getElementById("txtDireccion").value = varPaciente.direccion;
+                document.getElementById("cboEstado").value = varPaciente.estado;
+                break;
+            }
+        }
+
+    }
+}
