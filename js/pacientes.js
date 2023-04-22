@@ -32,3 +32,19 @@ function listar() {
         document.getElementById("dataPacientes").innerHTML = "<tr><td colspan='7'> NO HAY PACIENTES REGISTRADOS</td></tr>";
     }
 }
+
+function abrirForm(idForm) {
+    localStorage.setItem("idForm", JSON.stringify(idForm));
+    window.location.replace("pacientes-form.html");
+}
+
+function eliminarItem(idItem){
+       for(const i in tablaPaciente){
+        var varPaciente = JSON.parse(tablaPaciente[i]);
+        if (varPaciente.idPaciente == idItem){
+            tablaPaciente.splice(i,1);
+            localStorage.setItem("tablaPacienteStorage", JSON.stringify(tablaPaciente));
+        }
+       }
+       listar()
+}
